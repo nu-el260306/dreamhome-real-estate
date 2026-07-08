@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>DreamHome | Properties</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="properties.css">
+
+<script src="properties.js" defer></script>
+
+</head>
+
+<body>
+
+<!-- ================= NAVBAR ================= -->
+
+<header>
+
+<nav>
+
+<a href="index.html" class="logo">
+    <img src="logo.png" alt="DreamHome Logo" class="logo-img">
+</a>
+
+<ul class="nav-links" id="navLinks">
+
+<li><a href="index.html">Home</a></li>
+
+<li><a href="properties.html" class="active">Properties</a></li>
+
+<li><a href="about.html">About</a></li>
+
+<li><a href="contact.html">Contact</a></li>
+
+</ul>
+
+<div class="nav-buttons">
+
+<button id="themeBtn">🌙</button>
+
+<div class="menu-btn" id="menuBtn">☰</div>
+
+</div>
+
+</nav>
+
+</header>
+
+<!-- ================= HERO ================= -->
+
+<section class="page-hero">
+
+<h1>Explore Our Properties</h1>
+
+<img src="house1.jpg" alt="">
+
+<p>
+
+Browse luxury homes, apartments, duplexes and investment properties.
+
+</p>
+
+</section>
+
+<!-- ================= SEARCH ================= -->
+
+<section class="search-section">
+
+<input
+type="text"
+id="searchInput"
+placeholder="Search by city...">
+
+<select id="typeFilter">
+
+<option value="">All Property Types</option>
+
+<option>House</option>
+
+<option>Apartment</option>
+
+<option>Duplex</option>
+
+<option>Villa</option>
+
+</select>
+
+<select id="priceFilter">
+
+<option value="">Any Price</option>
+
+<option value="50000000">Below ₦50M</option>
+
+<option value="100000000">Below ₦100M</option>
+
+<option value="200000000">Below ₦200M</option>
+
+</select>
+
+<button id="searchBtn">
+
+Search
+
+</button>
+
+</section>
+
+<!-- ================= PROPERTY GRID ================= -->
+
+<section class="property-grid" id="propertyGrid">
+
+<!-- Property 1 -->
+
+<div class="property-card"
+
+data-location="Lagos"
+
+data-type="Duplex"
+
+data-price="85000000">
+
+<img src="house1.jpg" alt="">
+
+<span class="badge">Featured</span>
+
+<h3>Luxury Duplex</h3>
+
+<p>📍 Lekki Phase 1, Lagos</p>
+
+<div class="details">
+
+<span>🛏 5 Beds</span>
+
+<span>🛁 6 Baths</span>
+
+<span>📐 650 sqm</span>
+
+</div>
+
+<h2>₦85,000,000</h2>
+
+<div class="card-buttons">
+
+<button class="favorite-btn">🤍</button>
+
+<button class="details-btn">
+
+View Details
+
+</button>
+
+</div>
+
+</div>
+
+<!-- Property 2 -->
+
+<div class="property-card"
+
+data-location="Abuja"
+
+data-type="Apartment"
+
+data-price="65000000">
+
+<img src="house2.jpg" alt="">
+
+<span class="badge">New</span>
+
+<h3>Modern Apartment</h3>
+
+<p>📍 Maitama, Abuja</p>
+
+<div class="details">
+
+<span>🛏 3 Beds</span>
+
+<span>🛁 4 Baths</span>
+
+<span>📐 420 sqm</span>
+
+</div>
+
+<h2>₦65,000,000</h2>
+
+<div class="card-buttons">
+
+<button class="favorite-btn">🤍</button>
+
+<button class="details-btn">
+
+View Details
+
+</button>
+
+</div>
+
+</div>
+
+<!-- Property 3 -->
+
+<div class="property-card"
+
+data-location="Port Harcourt"
+
+data-type="Villa"
+
+data-price="120000000">
+
+<img src="house3.jpg" alt="">
+
+<span class="badge">For Sale</span>
+
+<h3>Family Villa</h3>
+
+<p>📍 GRA, Port Harcourt</p>
+
+<div class="details">
+
+<span>🛏 6 Beds</span>
+
+<span>🛁 7 Baths</span>
+
+<span>📐 800 sqm</span>
+
+</div>
+
+<h2>₦120,000,000</h2>
+
+<div class="card-buttons">
+
+<button class="favorite-btn">🤍</button>
+
+<button class="details-btn">
+
+View Details
+
+</button>
+
+</div>
+
+</div>
+
+<!-- Property 4 -->
+
+<div class="property-card"
+
+data-location="Asaba"
+
+data-type="House"
+
+data-price="95000000">
+
+<img src="house4.jpg" alt="">
+
+<span class="badge">Featured</span>
+
+<h3>Smart Home</h3>
+
+<p>📍 Asaba, Delta</p>
+
+<div class="details">
+
+<span>🛏 4 Beds</span>
+
+<span>🛁 5 Baths</span>
+
+<span>📐 560 sqm</span>
+
+</div>
+
+<h2>₦95,000,000</h2>
+
+<div class="card-buttons">
+
+<button class="favorite-btn">🤍</button>
+
+<button class="details-btn">
+
+View Details
+
+</button>
+
+</div>
+
+</div>
+
+<!-- Property 5 -->
+
+<div class="property-card"
+
+data-location="Enugu"
+
+data-type="Mansion"
+
+data-price="150000000">
+
+<img src="house5.jpg" alt="">
+
+<span class="badge">Luxury</span>
+
+<h3>Luxury Mansion</h3>
+
+<p>📍 Independence Layout, Enugu</p>
+
+<div class="details">
+
+<span>🛏 7 Beds</span>
+
+<span>🛁 8 Baths</span>
+
+<span>📐 1200 sqm</span>
+
+</div>
+
+<h2>₦150,000,000</h2>
+
+<div class="card-buttons">
+
+<button class="favorite-btn">🤍</button>
+
+<button class="details-btn">
+
+View Details
+
+</button>
+
+</div>
+
+</div>
+
+</section>
+
+<footer>
+
+<p>
+
+© 2026 DreamHome. All Rights Reserved.
+
+</p>
+
+</footer>
+
+</body>
+
+</html>

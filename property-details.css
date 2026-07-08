@@ -1,0 +1,391 @@
+/* ===============================
+   GOOGLE RESET
+================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:#f5f7fb;
+    color:#333;
+    line-height:1.7;
+}
+
+/* ===============================
+   HEADER
+================================== */
+
+header{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    background:#fff;
+    box-shadow:0 5px 20px rgba(0,0,0,.08);
+    z-index:999;
+}
+
+nav{
+    width:90%;
+    margin:auto;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px 0;
+}
+
+.logo img{
+    height:55px;
+}
+
+.nav-links{
+    display:flex;
+    list-style:none;
+    gap:30px;
+}
+
+.nav-links a{
+    text-decoration:none;
+    color:#333;
+    font-weight:500;
+    transition:.3s;
+}
+
+.nav-links a:hover{
+    color:#0f766e;
+}
+
+.nav-buttons{
+    display:flex;
+    align-items:center;
+    gap:15px;
+}
+
+#themeBtn{
+    width:45px;
+    height:45px;
+    border:none;
+    border-radius:50%;
+    background:#0f766e;
+    color:#fff;
+    cursor:pointer;
+    font-size:18px;
+}
+
+.menu-btn{
+    display:none;
+    font-size:30px;
+    cursor:pointer;
+}
+
+/* ===============================
+   PROPERTY
+================================== */
+
+.property-details{
+    width:90%;
+    max-width:1200px;
+    margin:120px auto 80px;
+}
+
+.property-image img{
+    width:100%;
+    border-radius:20px;
+    display:block;
+    box-shadow:0 15px 40px rgba(0,0,0,.15);
+}
+
+.property-info{
+    margin-top:40px;
+}
+
+.property-info h1{
+    font-size:42px;
+    color:#0f172a;
+}
+
+.property-info h2{
+    color:#0f766e;
+    margin:15px 0;
+    font-size:34px;
+}
+
+.property-info p{
+    color:#555;
+}
+
+.property-features{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:20px;
+    margin:40px 0;
+}
+
+.property-features div{
+    background:#fff;
+    padding:25px;
+    border-radius:15px;
+    text-align:center;
+    font-weight:600;
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+}
+
+.property-features i{
+    display:block;
+    font-size:28px;
+    color:#0f766e;
+    margin-bottom:12px;
+}
+
+/* ===============================
+   AGENT
+================================== */
+
+.agent-card{
+    background:#fff;
+    margin-top:50px;
+    padding:40px;
+    border-radius:20px;
+    text-align:center;
+    box-shadow:0 15px 35px rgba(0,0,0,.1);
+}
+
+.agent-img{
+    width:140px;
+    height:140px;
+    object-fit:cover;
+    border-radius:50%;
+    border:5px solid #0f766e;
+    margin-bottom:20px;
+}
+
+.agent-card h3{
+    font-size:28px;
+}
+
+.agent-role{
+    color:#777;
+    margin:10px 0;
+}
+
+.agent-rating{
+    color:#ffb400;
+    font-weight:600;
+}
+
+.agent-phone{
+    margin:15px 0 30px;
+}
+
+.agent-buttons{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+.call-btn,
+.whatsapp-btn{
+    padding:15px 30px;
+    border-radius:12px;
+    color:#fff;
+    text-decoration:none;
+    font-weight:600;
+    transition:.3s;
+}
+
+.call-btn{
+    background:#0f766e;
+}
+
+.whatsapp-btn{
+    background:#25D366;
+}
+
+.call-btn:hover,
+.whatsapp-btn:hover{
+    transform:translateY(-5px);
+}
+
+/* ===============================
+   SIMILAR PROPERTIES
+================================== */
+
+.similar-properties{
+    margin-top:80px;
+}
+
+.similar-properties h2{
+    text-align:center;
+    font-size:38px;
+    margin-bottom:45px;
+}
+
+.property-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+    gap:30px;
+}
+
+.property-card{
+    background:#fff;
+    border-radius:18px;
+    overflow:hidden;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.property-card:hover{
+    transform:translateY(-10px);
+}
+
+.property-card img{
+    width:100%;
+    height:230px;
+    object-fit:cover;
+}
+
+.property-content{
+    padding:25px;
+}
+
+.property-content h3{
+    margin-bottom:10px;
+}
+
+.price{
+    color:#0f766e;
+    font-size:24px;
+    font-weight:700;
+    margin-bottom:10px;
+}
+
+.location{
+    margin-bottom:20px;
+}
+
+.property-icons{
+    display:flex;
+    justify-content:space-between;
+    margin-bottom:25px;
+    color:#666;
+}
+
+.details-btn{
+    display:inline-block;
+    width:100%;
+    text-align:center;
+    padding:14px;
+    background:#0f766e;
+    color:#fff;
+    text-decoration:none;
+    border-radius:10px;
+    transition:.3s;
+}
+
+.details-btn:hover{
+    background:#115e59;
+}
+
+/* ===============================
+   MOBILE
+================================== */
+
+@media(max-width:768px){
+
+.nav-links{
+    position:absolute;
+    top:85px;
+    right:-100%;
+    width:230px;
+    background:#fff;
+    flex-direction:column;
+    padding:30px;
+    box-shadow:0 10px 30px rgba(0,0,0,.15);
+    transition:.4s;
+}
+
+.nav-links.active{
+    right:20px;
+}
+
+.menu-btn{
+    display:block;
+}
+
+.property-features{
+    grid-template-columns:repeat(2,1fr);
+}
+
+.property-info h1{
+    font-size:32px;
+}
+
+.property-info h2{
+    font-size:28px;
+}
+
+.agent-buttons{
+    flex-direction:column;
+}
+
+.call-btn,
+.whatsapp-btn{
+    width:100%;
+    text-align:center;
+}
+
+}
+/* ==========================
+   DARK MODE
+========================== */
+
+body.dark-mode{
+    background:#0f172a;
+    color:#f8fafc;
+}
+
+body.dark-mode header{
+    background:#1e293b;
+}
+
+body.dark-mode .nav-links a{
+    color:#fff;
+}
+
+body.dark-mode .property-features div,
+body.dark-mode .property-card,
+body.dark-mode .agent-card{
+    background:#1e293b;
+    color:#fff;
+}
+
+body.dark-mode .property-info h1,
+body.dark-mode .property-info h2,
+body.dark-mode .similar-properties h2,
+body.dark-mode .property-content h3{
+    color:#fff;
+}
+
+body.dark-mode .property-info p,
+body.dark-mode .location,
+body.dark-mode .agent-role,
+body.dark-mode .agent-phone{
+    color:#cbd5e1;
+}
+
+body.dark-mode .details-btn{
+    background:#14b8a6;
+}
+
+body.dark-mode .call-btn{
+    background:#14b8a6;
+}
